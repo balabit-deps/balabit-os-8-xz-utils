@@ -1,3 +1,13 @@
+xz-utils (5.2.4-1ubuntu1.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: arbitrary file overwrite or code execution with
+    crafted file names
+    - debian/patches/CVE-2022-1271.patch: fix escaping of malicious
+      filenames in src/scripts/xzgrep.in.
+    - CVE-2022-1271
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 08 Apr 2022 08:56:10 -0400
+
 xz-utils (5.2.4-1ubuntu1) focal; urgency=medium
 
   * Use the generic % rule in debian/rules, otherwise it FTBFS with 
